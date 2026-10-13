@@ -28,7 +28,7 @@ activity_labels = {
 }
 
 # Caricamento del file Excel
-file_path = "Database_grafico_subactivities.xlsx"  # Sostituisci con il percorso del tuo file
+file_path = "Databas_grafico_subactivities/Database_grafico_subactivities.xlsx"  # Sostituisci con il percorso del tuo file
 df = pd.read_excel(file_path, sheet_name="Sheet1")
 
 # Creazione della figura con 3 sottografici (uno sotto l'altro)

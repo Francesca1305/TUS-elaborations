@@ -11,7 +11,7 @@ color_map = {
 }
 
 # Caricamento del file Excel
-file_path = "Database_grafico_activities.xlsx"  # Sostituisci con il percorso del tuo file
+file_path = "Database_grafico_activities/Database_grafico_activities.xlsx"  # Sostituisci con il percorso del tuo file
 df = pd.read_excel(file_path, sheet_name="Sheet1")
 
 # Creazione della figura con 3 sottografici (uno sotto l'altro)

@@ -1,6 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
+year = "2022"
+
 # Definizione dei colori e delle etichette per i due tipi di grafico
 color_map_1 = {
     1: 'blue',
@@ -50,8 +52,8 @@ rip_class = {
 }
 
 # Caricamento dei file Excel
-file_path_1 = "Database_grafico_activities.xlsx"
-file_path_2 = "Database_grafico_subactivities.xlsx"
+file_path_1 = f"Database_grafico_activities_{year}.xlsx"
+file_path_2 = f"Database_grafico_subactivities_{year}.xlsx"
 
 df_1 = pd.read_excel(file_path_1, sheet_name="Sheet1")
 df_2 = pd.read_excel(file_path_2, sheet_name="Sheet1")
@@ -120,6 +122,6 @@ fig.legend(handles_2, labels_2, loc='upper center', ncol=3,
 plt.tight_layout(rect=[0, 0, 1, 0.94])  # Spazio extra sopra per le legende
 
 # Salvataggio e visualizzazione del grafico
-plt.savefig("Scatter_plots_six_panels.png")
+plt.savefig(f"Scatter_plots_six_panels_{year}.png")
 plt.show()
 
